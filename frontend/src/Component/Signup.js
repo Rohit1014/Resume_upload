@@ -16,7 +16,7 @@ const Signup=()=>{
    },[navigate])
 
     const CollectData=async()=>{
-        const response = await axios.post('http://localhost:5000/register', {
+        const response = await axios.post('https://resume-upload-backend.onrender.com', {
             name,
             email,
             password

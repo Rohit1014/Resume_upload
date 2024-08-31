@@ -18,7 +18,7 @@ const Add = () => {
         formData.append("profile", file);
 
         try {
-            let response = await axios.post("http://localhost:5000/uploads", formData, {
+            let response = await axios.post("https://resume-upload-backend.onrender.com", formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                     authorization: `Bearer ${localStorage.getItem("Token")}`,
@@ -43,8 +43,8 @@ const Add = () => {
 
     return (
         <div className="add-product">
-            <h3>Add Product</h3>
-            {error && <div className="error-message">{error}</div>} {/* Display error message */}
+            <h3>Apply Here</h3>
+            {error && <div className="error-message">{error}</div>} 
             <input
                 type="text"
                 placeholder="Enter Name"
