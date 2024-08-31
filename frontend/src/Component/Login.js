@@ -15,7 +15,7 @@ const Login=()=>{
     },[navigate])
 
         const  LoginBtn=async()=>{
-            let response = await axios.post('https://resume-upload-backend.onrender.com', {
+            let response = await axios.post('https://resume-upload-backend1.onrender.com', {
                 email,
                 password
             });
