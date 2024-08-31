@@ -8,6 +8,7 @@ const jwtkey =process.env.jwtkey;
 const path=require("path")
 const upload=require("./storage")
 const check=require("./check")
+const port = process.env.PORT || 5000;
  
 const app = express();
 
@@ -125,4 +126,4 @@ function verifyToken(request, response, next) {
 
 
 
-app.listen(5000);
+app.listen(port);
