@@ -18,7 +18,7 @@ const Add = () => {
         formData.append("profile", file);
 
         try {
-            let response = await axios.post("https://resume-upload-backend.onrender.com", formData, {
+            let response = await axios.post("https://resume-upload-backend1.onrender.com", formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                     authorization: `Bearer ${localStorage.getItem("Token")}`,
